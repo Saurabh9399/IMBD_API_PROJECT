@@ -1,0 +1,67 @@
+/* background */
+body {
+    height:auto;
+    background-image: url(/images/theend.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat:repeat;
+    background-size: cover;
+   display: flex;
+   flex-direction: column;
+  }
+  /*Heading for fav page*/
+  h1 {
+    display: block;
+    color: rgb(238, 146, 146);
+    font-size: 2.3rem;
+    background-color: rgba(16, 5, 66, 0.863);
+    padding: 2%;
+    text-align: center;
+    border: 3px solid rgb(128, 0, 96);
+    margin-top: 0.1%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  /* container containing cards */
+  .container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-start;
+    max-width: 90vw !important;
+    border: 3px solid rgb(128, 0, 96);
+    margin-top: 10%;
+  }
+  /* setting individual cards */
+  .card {
+    color: white;
+    text-align: center;
+    background-color: rgba(221, 57, 57, 0.8);
+    margin: 3%;
+    max-width: 25rem;
+    min-width: 18rem;
+    border-radius: 0% !important;
+  }
+  /* card image */
+  .card img {
+    padding: 2%;
+  }
+  /* buttons */
+  button {
+    margin: 1%;
+  }
+  
+  .btn-info {
+    /* background-color: purple !important; */
+    border-radius: 50% !important;
+    margin-right: 10%;
+
+  }
+  .btn-danger {
+    /* background-color: rgb(10, 163, 252) !important; */
+    border-radius: 50% !important;
+    margin-left: 10%;
+    background-color:red;
+  }
+  

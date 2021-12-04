@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="show_movie.css" />
+    <title>Movie Result Page</title>
+  </head>
+  <body>
+    <!-- container for  information of Movie -->
+    <div class="container">
+      <!-- container card for image and stats in movie -->
+      <div class="card" style="width: 15rem; position: sticky;top:1px;" id="movie-details">
+        <img src="" class="card-img-top" alt="Movie image" id="movie-image" />
+      </div>
+
+      <!-- jumbotron for Movie information -->
+      <div class="jumbotron">
+        <h1 class="display-4" id="movie-name"></h1>
+        <h3 id="aliases"></h3>
+        <hr />
+        <div class="lead" id="occupation"></div>
+        <h4 class="lead" id="connections"></h4>
+        <div id="additional-info"></div>
+        <div id="add-fav">
+          <button class="btn btn-lg btn-addtofav" id="btn-add-favourite">
+            Add To Favourites <i class="fa fa-arrow-circle-right" style="color: green;"></i>
+          </button>
+          <button class="btn btn-lg btn-gotofav" id="btn-favourite">
+            Go to Favourites <i class="fa fa-heart" style="color: red;"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- ALert  message after adding-->
+    <div id="msg-container">
+      <div id="message">Added to Favourites Successfully! 😊</div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="show_movie.js"></script>
+  </body>
+</html>
